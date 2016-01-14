@@ -71,9 +71,4 @@ I used ActiveRecord helpers throughout my project to access the information in m
 
 
 
-##Unsolved Problems
-
-I would of really liked to get all the crocs animated differently from the same fucntion but I had run out of time to refactor my code further.
-=======
-
 
