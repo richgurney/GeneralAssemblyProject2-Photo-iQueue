@@ -1,0 +1,22 @@
+
+<div id="slider">
+  
+  <h1>Album: <%= @album.name.capitalize %></h1>
+  <a href="#" class="control_prev">Next Photo</a>
+  <ul>
+    <% @album.photos.each do |photo| %>
+      <li style="background: #aaa;">
+        <%= link_to image_tag(photo.upload_image.url), photo %>
+      </li>
+    <% end %>  
+  </ul>  
+  <br>
+</div>
+
+<div class="photo_container"
+  <section id="photos">
+    <% @album.photos.each do |photo| %>
+    <%= link_to image_tag(photo.upload_image.url), photo %>
+    <% end %>
+  </section>
+</div>

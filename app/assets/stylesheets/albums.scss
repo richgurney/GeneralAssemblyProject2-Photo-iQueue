@@ -1,0 +1,16 @@
+// Place all the styles related to the albums controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.albums_background {
+  background-image: image-url('clocks.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+	background-color: #red;
+	width: 100%;
+	height: 100%;
+}

@@ -1,0 +1,61 @@
+<div class="sticky">
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+    <li class="name">
+      <h1><a href="/home">Photo iQueue</a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon">
+      <a href=""><span>Menu</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right"> 
+        <li>
+          <a href="/public">Public Photos</a>
+         </li>
+        <li><% if user_signed_in? %>
+              <%= link_to 'Edit Profile', edit_user_registration_path, :class => 'navbar-link'  %>
+            <% else %>
+              <%= link_to 'Sign Up', new_user_registration_path, :class => 'navbar-link'  %>
+            <% end %> 
+        </li>
+        <li><% if user_signed_in? %>
+              <%= link_to 'Logout', destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+            <% else %>
+              <%= link_to 'Login', new_user_session_path, :class => 'navbar-link'  %>
+            <% end %> 
+        </li>
+      </ul>
+      <!-- Left Nav Section -->
+      <ul class="left">
+          <li>
+            <% if user_signed_in? %>
+              <%= link_to "Albums", albums_path %>
+            <% end %>
+          </li>
+          <li>
+            <% if user_signed_in? %>
+              <%= link_to "Photos", photos_path %>
+            <% end %>
+          </li>
+          <li>
+            <% if user_signed_in? %>
+              <%= link_to "New Album", new_album_path %>
+            <% end %>
+          </li>
+          <li>
+            <% if user_signed_in? %>
+              <%= link_to "Upload Photo", new_photo_path %>
+            <% end %>
+          </li>
+          
+          
+      </ul>
+    </section>
+  </nav>
+  <div id='top_info'>
+    <% if user_signed_in? %>
+      Logged in as <strong><%= current_user.email %></strong>.
+    <% end %>
+  </div>
+</div>

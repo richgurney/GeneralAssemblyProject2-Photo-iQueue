@@ -1,0 +1,10 @@
+<div class="container">
+	<section id="photos">
+		<% @publics.each do |photo| %>
+		  <%= image_tag photo.upload_image.url %>
+		<% end %>
+	</section>	
+</div>
+	
+
+

@@ -1,0 +1,83 @@
+// Place all the styles related to the photos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#map{
+	width: 100%;
+	height: 350px;
+}
+
+#photo{
+	width:400px;
+	height:400px;
+}
+
+#photoDetails{
+  background-color: black;
+
+  p {
+    color:white;
+  }
+}
+
+.aformcontainer{
+	width: 500px;
+	margin: auto;
+	background-color:black;
+	border: solid 2px white;
+  color: white;
+  border-radius: 3px;
+
+  h1 {
+    color: white;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .aformcontainer { width: 100%; }  
+}
+
+
+
+.photos_background {
+  background-image: image-url('london.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.photos_color {
+  background-color: #F4F4F9;
+}
+
+
+
+div.photos_background-inner {
+
+    width:100%;
+    height:100%;
+    background-color: rgba(6,0,10,0.1);
+
+}
+
+div.photos_background div#welcome {
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+}
+div.photos_background div#welcome h1 {
+
+    color:white !important;
+
+}
+
+.row {
+  img{
+    margin: auto;
+  }
+}
+
+
