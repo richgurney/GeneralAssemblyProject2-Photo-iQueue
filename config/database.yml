@@ -76,10 +76,10 @@ test:
 # You can use this database configuration with:
 #
 #   production:
-#     url: <%= ENV['DATABASE_URL'] %>
+#     url:
 #
 production:
   <<: *default
-  database: photoapp_production
+  database:  <%= ENV['DATABASE_URL'] %>
   username: photoapp
   password: <%= ENV['PHOTOAPP_DATABASE_PASSWORD'] %>
