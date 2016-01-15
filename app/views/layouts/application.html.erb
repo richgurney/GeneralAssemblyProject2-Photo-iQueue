@@ -3,31 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Photo iQueue</title>
-
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
-
     <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
     <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'> 
-    
-    
-
-    
+    <%= favicon_link_tag 'camera.png' %>
     <%= csrf_meta_tags %>
     <%= include_gon %>
-
   </head>
-
   <body>
-  
     <%= render 'partials/nav' %>
-
-    
-    
     <%= yield %>
- 
   </body>
 </html>

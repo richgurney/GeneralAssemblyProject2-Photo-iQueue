@@ -1,6 +1,5 @@
-
+<!-- this shows the all the photos in a slider -->
 <div id="slider">
-  
   <h1>Album: <%= @album.name.capitalize %></h1>
   <a href="#" class="control_prev">Next Photo</a>
   <ul>
@@ -12,7 +11,7 @@
   </ul>  
   <br>
 </div>
-
+<!-- this is the grid photos layout -->
 <div class="photo_container"
   <section id="photos">
     <% @album.photos.each do |photo| %>

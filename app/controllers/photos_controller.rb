@@ -3,12 +3,16 @@ class PhotosController < ApplicationController
 	before_action :set_photo, only: [:show, :edit, :update, :destroy]
 
 	def index
+		# get all the photos from the current user
 		@photos = current_user.photos
+		# get all the photos that are publuc and private
 		@publics = Photo.where(:public => 'true')
 		@privates = Photo.where(:public => 'false')
 	end
 
 	def show
+		# Google map, uses the locaation param to use as the location
+		# Then pick first and second element in array for latitude and longitude
 		@photo = Photo.find(params[:id])
 		@coordinates = Geocoder.coordinates(@photo.location)
 		gon.lat = @coordinates[0]
@@ -17,6 +21,7 @@ class PhotosController < ApplicationController
 	end
 
 	def new
+		# Create a new photo
 		@photo = Photo.new
 	end 
 
@@ -25,7 +30,6 @@ class PhotosController < ApplicationController
 
 	def create
 	  @photo = Photo.new(photo_params)
-
 	  
 	  respond_to do |format|
 	    if @photo.save

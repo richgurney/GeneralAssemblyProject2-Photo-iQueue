@@ -43,6 +43,7 @@ This is a photo storage app that you can sign up to that will allow you to store
 * JQuery
 * JQuery - Animate
 * Google Fonts
+* Foundation
 * Gems Used:-
 
 gem 'devise'
@@ -56,17 +57,29 @@ gem 'gon'
 
 ##Approach Taken
 
-Agile was my choice of planning for this project. I started out drawing out my fireframes on paper you can see these in the planning directory. These really gave me a clear picture of where I was going with the production. I then spent some time writting my user stories. I used Pivotal Tracker to organise me planning. This made me really slow down and face one task at a time and not get distracted. 
+Agile was my choice of planning for this project. I started out drawing out my fireframes on paper you can see these in the planning directory at gitgub..... These really gave me a clear picture of where I was going with the production. I then spent some time writting my user stories, I used Pivotal Tracker to organise these. This made me really slow down and face one task at a time and not get distracted. A pivotal tracker is in the planning folder at gitgub.....
 
-I constructed this app with three models user, photo and album. There were two 1-Many relationship and these were linked through each other. My initial planning of this is also in the planning folder. 
+I constructed this app with three models, user, photo and album. There were two 1-Many relationships and these were linked through each other. 
 
-The main arm of the app was the ability to upload photos from the users computer to the cloud. I used the Amazon Web Server combined with the Gems carrierwave and fog. This was the coolest part of the project as it add a really realistic dimension to the function of the project. Preparing for this part of the functioning I created a stand alone app to test how it worked. 
+The main arm of the app was the ability to upload photos from the users computer to the cloud. I used the Amazon Web Server combined with the Gems carrierwave and fog. This was the coolest part of the project as it adds a really realistic dimension to the function of the project. Preparing for this part of the app I created a stand alone app to test how it worked. This was a good exercise as I got all the mistakes out the way before I implimented it.
 
 Devise was my choice of gem to set up the login and signup functionality. This is a really powerful system that creates all the hard functionality for you.
 
-The photo and album model both using the Seven RestFul routes. I made use of resources that set up all my routes and I kept to all the standard routing. GET, POST, PUT, PATCH, and DELETE.
+The photo and album models both using the Seven RestFul routes. I made use of resources that set up all my routes and I kept to all the standard routing. GET, POST, PUT, PATCH, and DELETE.
 
-I used ActiveRecord helpers throughout my project to access the information in my database. This was a really powerful
+I used ActiveRecord helpers throughout my project to access the information in my database. This was a really helpful but a little confusing at times. Once I got the hang of it I came to enjoy the simplicity.
+
+I made my site responosve to different size of device, this was the first time I had implemented this into a full-stackproject. There were challneges along the way but with a combination of help from Foundation and some hand written media queries it thught it was a good a good first attempt.
+
+
+
+##Things That I didnt get done and future changes
+
+The main thing I would like to change for the future would be to map all the locations of the photos taken by a user. One big map with everything on. 
+
+One thing that I didnt get done was the interaction with the photos that a logged out user can have. I had planned for the user t be able to like the photos but I just ran out of time to add further additions.
+
+A really idea for the future would be to give the user choice to sell prints through the site with a payment system. 
 
 
 
