@@ -30,6 +30,10 @@ Your app must:
 * A link in your ``readme.md`` to the publically-accessible **user stories you created**
 ## Description
 
+###GitHub -  <a href="https://github.com/richgurney/project2">https://github.com/richgurney/project2</a>
+###Beta Site - <a href="https://stormy-garden-8334.herokuapp.com/">https://stormy-garden-8334.herokuapp.com/</a>
+
+
 This is a photo storage app that you can sign up to that will allow you to store your favourites photos on a cloud with details of where the photos were took including location maps and technical details. You get the chance to allow your photos to be public so even if people are not logged in they can see the photos you choose. The app is split into photos and albums, the photos can be view as a whole or by album.
 
 
@@ -57,7 +61,7 @@ gem 'gon'
 
 ##Approach Taken
 
-Agile was my choice of planning for this project. I started out drawing out my fireframes on paper you can see these in the planning directory at gitgub..... These really gave me a clear picture of where I was going with the production. I then spent some time writting my user stories, I used Pivotal Tracker to organise these. This made me really slow down and face one task at a time and not get distracted. A pivotal tracker is in the planning folder at gitgub.....
+Agile was my choice of planning for this project. I started out drawing out my fireframes on paper you can see these in the planning directory at <a href="https://github.com/richgurney/project2">https://github.com/richgurney/project2</a>. These really gave me a clear picture of where I was going with the production. I then spent some time writting my user stories, I used Pivotal Tracker to organise these. This made me really slow down and face one task at a time and not get distracted. A pivotal tracker is in the planning directory at <a href="https://github.com/richgurney/project2">https://github.com/richgurney/project2</a>.
 
 I constructed this app with three models, user, photo and album. There were two 1-Many relationships and these were linked through each other. 
 
