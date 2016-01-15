@@ -19,7 +19,21 @@
 
 
 jQuery(document).ready(function ($) {
-  
+  //sanitizing location in form
+    $( "#new_photo" ).submit(function( event ) {
+      var location = $('#photo_location').val();
+      if(location == ""){
+        $('#photo_location').val('Cannot leave blank');
+        $('#photo_location').click(function(e){
+          $('#photo_location').val('');
+        });
+        event.preventDefault();
+      } else if (location == "Cannot leave blank"){
+        event.preventDefault();
+      }
+    });
+
+
   // This is my JS plugin for the slider
   $('#checkbox').change(function(){
     setInterval(function () {
