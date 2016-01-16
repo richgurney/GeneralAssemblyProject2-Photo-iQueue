@@ -22,7 +22,9 @@ jQuery(document).ready(function ($) {
   //sanitizing location in form
     $( "#new_photo" ).submit(function( event ) {
       var location = $('#photo_location').val();
+      $('#loader').css('display', 'block')
       if(location == ""){
+        $('#loader').css('display', 'none')
         $('#photo_location').val('Cannot leave blank');
         $('#photo_location').click(function(e){
           $('#photo_location').val('');

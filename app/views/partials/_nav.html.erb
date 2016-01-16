@@ -52,8 +52,10 @@
     </section>
   </nav>
   <div id='top_info'>
-    <% if user_signed_in? %>
-      Logged in as <strong><%= current_user.email %></strong>.
-    <% end %>
+    <div class="login_container">
+      <% if user_signed_in? %>
+        Logged in as <strong><%= current_user.email %></strong>
+      <% end %>
+    </div>
   </div>
 </div>
