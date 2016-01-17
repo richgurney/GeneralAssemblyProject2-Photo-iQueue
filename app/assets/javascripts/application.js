@@ -90,6 +90,11 @@ function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 15,
     styles: styleArray,
+    scrollwheel: false,
+    navigationControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
+    draggable: false,
     center: myLatLng
   });
 

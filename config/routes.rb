@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get '/public' => 'welcome#public'
 
+  get '/warning' => 'welcome#warning'
+
   devise_for :users
 
   resources :photos

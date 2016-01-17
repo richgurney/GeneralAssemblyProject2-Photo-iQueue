@@ -1,6 +1,13 @@
 class PhotosController < ApplicationController
 	before_action :authenticate_user!
 	before_action :set_photo, only: [:show, :edit, :update, :destroy]
+	before_filter :access, only: [:show, :edit, :update, :destroy]
+
+	def access
+		if current_user.id != Photo.find(params[:id]).user_id
+			redirect_to warning_path
+		end
+	end
 
 	def index
 		# get all the photos from the current user
@@ -30,6 +37,7 @@ class PhotosController < ApplicationController
 
 	def create
 	  @photo = Photo.new(photo_params)
+	  @photo.user_id = current_user.id
 	  
 	  respond_to do |format|
 	    if @photo.save

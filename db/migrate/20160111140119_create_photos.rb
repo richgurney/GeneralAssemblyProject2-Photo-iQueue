@@ -7,7 +7,7 @@ class CreatePhotos < ActiveRecord::Migration
       t.text :tech
       t.boolean :public
       t.integer :album_id
-
+   
       t.timestamps null: false
     end
   end

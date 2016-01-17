@@ -2,6 +2,13 @@ class AlbumsController < ApplicationController
 	# only allows access if you are logged in
 	before_action :authenticate_user!
 	before_action :set_album, only: [:show, :edit, :update, :destroy]
+	before_filter :access, only: [:show, :edit, :update, :destroy]
+
+	def access
+		if current_user.id != Album.find(params[:id]).user_id
+			redirect_to warning_path
+		end
+	end
 
 	def index
 		# get all of the current users albums
