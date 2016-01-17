@@ -1,0 +1,42 @@
+<div id="mobile_welcome">
+	<br>
+	  <div id="mobile_favicon"><a href="/home"><img id="favicon_mobile_img" src="assets/camera.png"></a></div>
+	  <br>
+	  <div class="mobile_buttons">
+	    <% if user_signed_in? %>
+	      	<%= link_to "Albums", albums_path %>
+	    <% end %>
+	  </div>
+	  <div class="mobile_buttons">
+	    <% if user_signed_in? %>
+	      	<%= link_to "Photos", photos_path %>
+	    <% end %>
+	  </div>
+	  <div class="mobile_buttons">
+	  	<% if user_signed_in? %>
+	    	<%= link_to "New Album", new_album_path %>
+	  	<% end %>
+	  </div>
+	  <div class="mobile_buttons">
+	  	<% if user_signed_in? %>
+	  	  	<%= link_to "Upload Photo", new_photo_path %>
+	  	<% end %>
+	  </div>
+	  <div class="mobile_buttons">
+	  	  <a href="/public">Public Photos</a>
+	  </div>
+	  <div class="mobile_buttons">
+	  	<% if user_signed_in? %>
+	  		<%= link_to 'Edit Profile', edit_user_registration_path, :class => 'navbar-link'  %>
+		<% else %>
+	  		<%= link_to 'Sign Up', new_user_registration_path, :class => 'navbar-link'  %>
+	  	<% end %> 
+	  </div>
+	  <div class="mobile_buttons">
+	   	<% if user_signed_in? %>
+	    	<%= link_to 'Logout', destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+	    <% else %>
+	    	<%= link_to 'Login', new_user_session_path, :class => 'navbar-link'  %>
+	    <% end %> 
+	  </div>
+</div>

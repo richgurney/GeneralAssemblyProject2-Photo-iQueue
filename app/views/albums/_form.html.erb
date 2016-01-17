@@ -18,9 +18,12 @@
     <%= f.label :description %><br>
     <%= f.text_field :desc %>
   </div>
-  <div id="loader"><%= image_tag '/assets/loader.gif'%></div>
   <br>
-   <div class="actions">
-    <%= f.submit %>
+  <div class="field">
+    <input id="send" class="button small large-12" type="submit" value="Create Album" />
   </div>
+  <div class="field">
+    <div id="loader"><%= image_tag '/assets/loader.gif'%></div>
+  </div>
+  <br>
 <% end %>

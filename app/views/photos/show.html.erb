@@ -1,11 +1,14 @@
 <!-- show the selected photo -->
 <div class="row">
-  <h1><%= @photo.name %></h1>
+  
   <div class="medium-12 small-12 columns">
+    <h1><%= @photo.name %></h1>
+    <%= link_to 'Edit Photo  |', edit_photo_path(@photo) %>
+    <%= link_to '  Delete Photo  ', @photo, method: :delete, data: { confirm: 'Are you sure?' } %>
     <%= image_tag @photo.upload_image.url   %>
   </div>
 </div>
-<!-- displays the map -->
+
 <div class="row">
   <div class="medium-12 small-12 columns">
     <div id="map"></div>

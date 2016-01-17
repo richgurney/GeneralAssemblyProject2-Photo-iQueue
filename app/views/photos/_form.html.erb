@@ -11,6 +11,14 @@
   <% end %>
   <div class="formcontainer"> 
     <div class="field">
+      <%= f.label :upload_image %>
+      <%= f.file_field :upload_image %>
+    </div>
+    <div class="field">
+      <%= f.label :public %>
+      <%= f.check_box :public %>
+    </div>
+    <div class="field">
       <%= f.label :album %>
       <%= collection_select(:photo, :album_id, current_user.albums,:id, :name) %>
     </div>
@@ -30,18 +38,13 @@
       <%= f.label :techincal %>
       <%= f.text_field :tech %>
     </div>
-    <div class="field">
-      <%= f.label :public %>
-      <%= f.check_box :public %>
-    </div>
-    <div class="field">
-      <%= f.label :upload_image %>
-      <%= f.file_field :upload_image %>
-    </div>
-    <div id="loader"><%= image_tag '/assets/loader.gif'%></div>
     <br>
-    <div class="actions">
-      <%= f.submit %>
+    <div class="field">
+      <input id="send" class="button small large-12" type="submit" value="Upload Photo" />
     </div>
+    <div class="field">
+      <div id="loader"><%= image_tag '/assets/loader.gif'%></div>
+    </div>
+    <br>
   </div>
 <% end %>
