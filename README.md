@@ -31,7 +31,7 @@ Your app must:
 ## Description
 
 ###GitHub -  <a href="https://github.com/richgurney/project2">https://github.com/richgurney/project2</a>
-###Beta Site - <a href="https://stormy-garden-8334.herokuapp.com/">https://stormy-garden-8334.herokuapp.com/</a>
+###Beta Site - <a href="https://photoiqueue.herokuapp.com/">https://photoiqueue.herokuapp.com/</a>
 
 
 This is a photo storage app that you can sign up to that will allow you to store your favourites photos on a cloud with details of where the photos were took including location maps and technical details. You get the chance to allow your photos to be public so even if people are not logged in they can see the photos you choose. The app is split into photos and albums, the photos can be view as a whole or by album.
