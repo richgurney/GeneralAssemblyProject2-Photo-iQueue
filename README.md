@@ -1,5 +1,5 @@
-
-# Richard Gurney - GA Project 2
+# Photo iQueue
+## General Assembly - Project 2
 
 ---
 
