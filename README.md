@@ -1,5 +1,5 @@
-# Photo iQueue
-## General Assembly - Project 2
+# Photo iQueue (Rails App)
+## General Assembly - Project 2 
 
 ---
 
